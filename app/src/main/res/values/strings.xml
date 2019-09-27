@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Reminder</string>
+
+    <string name="show_at">Show At:</string>
+    <string name="add_message">Add Message</string>
+    <string name="hh">HH</string>
+    <string name="mm">MM</string>
+    <string-array name="am_pm">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string name="save">Save</string>
+
+    <string name="internet_error">Please Check Internet Connectivity !</string>
+</resources>

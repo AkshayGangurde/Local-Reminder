@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.akshay.reminder.splash.view.SplashFragment"
+        android:label="Splash Screen"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_blankFragment_to_messageListFragment"
+            app:destination="@id/messageListFragment"
+            app:popUpTo="@+id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/messageListFragment"
+        android:name="com.akshay.reminder.message_list.view.MessageListFragment"
+        android:label="Message List"
+        tools:layout="@layout/fragment_message_list">
+        <action
+            android:id="@+id/action_messageListFragment_to_addMessageFragment"
+            app:destination="@id/addMessageFragment"
+            app:popUpTo="@+id/messageListFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/addMessageFragment"
+        android:name="com.akshay.reminder.add_msg.view.AddMessageFragment"
+        android:label="Add Message"
+        tools:layout="@layout/fragment_add_message" />
+
+
+</navigation>
